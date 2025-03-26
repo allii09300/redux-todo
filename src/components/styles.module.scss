@@ -1,0 +1,86 @@
+.TodoApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #34495e;
+  background-color: #34495e;
+
+  h1 {
+    color: #bdc3c7;
+  }
+
+  .InputArea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+
+    input {
+      outline: none;
+      flex: 1;
+      padding: 10px 10px;
+      border-radius: 5px;
+      border: 1px solid #34495e;
+      background-color: #ecf0f1;
+    }
+
+    button {
+      cursor: pointer;
+      outline: none;
+      padding: 5px 20px;
+      margin: 0 auto;
+      border: 1px solid #7f8c8d;
+      border-radius: 5px;
+      color: #ecf0f1;
+      background-color: #7f8c8d;
+
+      &:hover {
+        background-color: darken(#7f8c8d, 10%);
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    width: 50%;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      margin: 0 0 15px 0;
+      padding: 0 0 5px 0;
+      gap: 10px;
+      transform: translateX(-15px);
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+
+      span {
+        cursor: pointer;
+        color: #ecf0f1;
+
+        &.Completed {
+          text-decoration: line-through;
+        }
+      }
+
+      button {
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #e74c3c;
+        color: #ecf0f1;
+        background-color: #e74c3c;
+
+        &:hover {
+          background-color: darken(#e74c3c, 10%);
+        }
+      }
+    }
+  }
+}

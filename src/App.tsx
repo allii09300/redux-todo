@@ -1,9 +1,7 @@
-import './App.css';
+import TodoApp from "./components";
 
 function App() {
-  return (
-    <h1>APP</h1>
-  );
+  return <TodoApp />;
 }
 
 export default App;
